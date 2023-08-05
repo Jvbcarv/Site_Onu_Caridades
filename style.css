@@ -1,0 +1,174 @@
+<style> /* formatação do estilo geral do site, em CSS */
+
+/* configurações dos elementos do site */   
+        *{ 
+            margin: 0 auto;
+            padding: 0; /* a distância entre o elemento e as bordas da página será 0 */
+            box-sizing: border-box; 
+        }
+/* configuração dos parágrafos do site e os cabeçalhos de nível 1 */
+        p, h1{ 
+            text-align: center; /*texto centralizado*/
+            margin: 25px;
+            padding: 25px;
+            color: white
+         }
+         h2, h3{ 
+            text-align: center; /*texto centralizado*/
+            margin: 25px;
+            padding: 25px;
+            color: white;
+            -webkit-text-stroke-width: 0.5px;
+            -webkit-text-stroke-color: blueviolet;
+            color: rgb(59, 179, 226) ;
+         }
+/* configurações gerais do corpo do site */
+        body{ 
+            font-family: Arial, Helvetica, sans-serif; /*essa será a fonte de todo o site*/
+            background-image: url('img/fundo.png'); /*o plano de fundo do site ficará com imagem*/
+            /* configurações do plano de fundo: */
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                min-height: 100vh; 
+        }
+/*configuração da barra de menú*/
+.barrademenu{
+    width: 100%;
+    max-width: 100%; /*colocar a cor de fundo preenchendo a parte de cima completa*/
+    margin: 0px; /*linha que separa o menú e o restante do site*/
+    display: flex;
+    align-items: center;
+    justify-content: left; /*para os itens do menú ficarem a esquerda da tela*/
+    background-color:white; 
+    opacity: 0.9; 
+}
+header{
+    background-color:white; 
+    opacity: 0.7; 
+    width: 100%;
+    max-width: 100%;
+   
+}
+.barrademenu ul{
+                list-style-type: none; /*pra tirar a bolinha da frente dos itens da lista */
+                margin: 10px;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                }  
+            li{
+                float:left; /*para colocar os itens do menú lado a lado*/ 
+                position:relative;
+                }
+            li a {
+                display: block;
+                color: black; /* cor de texto do menú*/
+                margin: 1px;
+                padding: 8px 16px;
+                text-decoration: none; /*tira o sublinhado do link*/
+                }
+
+            /* cor quando passar o mouse pelo menú: blueviolet*/
+            li a:hover {
+                background-color: blueviolet;
+                color: white;
+                }
+.divdeobras{
+    width: 700px;  
+    height: 510px;  
+    max-width: 500px; 
+    margin: 20px;
+    float: left;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, transparent 0%, white 1%, rgb(59, 179, 226) 2%, #add8e6 5%, blueviolet 3%, transparent);
+}
+
+.proximo{
+    float: right;
+    width: 500px;  
+    height: 220px;  
+    color: rgb(92, 89, 89);
+    padding: 25px; 
+     margin: 5px;  
+     border-radius: 20px;
+     justify-content: left;
+     background-color:white; 
+     opacity: 0.7; 
+     border-style: ridge;
+     border-bottom: 2px;
+     border-color: blueviolet;
+}
+.eventos{
+    float: right;
+    width: 500px;  
+    height: 220px;
+    padding: 25px; 
+    margin: 5px;
+    border-radius: 20px;
+     justify-content: left;
+     background-color:white; 
+     opacity: 0.7;
+     border-style: ridge;
+     border-bottom: 2px;
+     border-color: blueviolet;
+}
+
+/*página de eventos*/
+
+.ultimoseventos div{
+    color: white;
+    width: 600px; 
+    height: 400px; 
+    display:flex; 
+    font-size: 17px; 
+    margin: 5px; /*distância das divs entre si*/ 
+    align-items: center; 
+    justify-content: center; 
+    background-color: blueviolet;
+    opacity: 0.8;
+    border-radius: 5px;
+    border: 3px;
+    border-style: outset; /*borda das divs*/
+}
+.ultimoseventos { 
+    display: flex; 
+} 
+
+
+/*Caixa de Login:*/
+
+.login{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: blueviolet;
+    opacity: 0.9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border-radius: 15px;
+    border: 2px;
+    border-color: rgba(41, 41, 83, 0.301);
+    border-style: dashed;
+}
+input{
+    padding: 15px;
+    border: none;
+    font-size: 15px;
+}
+button{
+    background-color: dodgerblue;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
+button:hover{
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+</style>
